@@ -1,6 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
 
+import { API_BASE_URL, DEFAULT_STYLE_PREFERENCES } from './utils/constants';
+import { formatDate, truncateString } from './utils/helpers';
+
+// API_BASE_URLやformatDateなどを使用
+
+import React from 'react';
+import { UserProvider } from './context/UserContext';
+import { CoordinateProvider } from './context/CoordinateContext';
+
+
+
 function App() {
   return (
     <div className="App">
