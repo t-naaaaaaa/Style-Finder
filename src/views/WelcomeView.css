@@ -1,0 +1,49 @@
+.welcome-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-color: #e0f7fa; /* 背景色はデザインに合わせて調整 */
+  border-radius: 20px; /* 角丸の半径を調整 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 影を軽くつける */
+  margin: auto; /* 中央に配置 */
+  max-width: 800px; /* 最大幅を設定 */
+}
+
+.welcome-text {
+  max-width: 400px; /* テキスト部分の最大幅 */
+  margin-right: 20px; /* 画像との間隔 */
+}
+
+h1 {
+  color: #1976d2; /* ヘッダーの色 */
+  margin-bottom: 20px; /* 下マージン */
+}
+
+p {
+  margin-bottom: 15px; /* 段落間の下マージン */
+  color: #333; /* テキストの色 */
+}
+
+.start-button {
+  padding: 10px 20px;
+  background-color: #1976d2; /* ボタンの背景色 */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase; /* テキストを大文字に */
+  letter-spacing: 1px; /* 文字の間隔を設定 */
+  margin-top: 20px; /* ボタンの上マージン */
+}
+
+.start-button:hover {
+  background-color: #155a9c; /* ホバー時の色 */
+}
+
+.welcome-image img {
+  max-width: 100%; /* 画像の最大幅 */
+  height: auto; /* 高さを自動調整 */
+  border-radius: 10px; /* 画像の角丸 */
+}
