@@ -1,0 +1,71 @@
+.style-selection-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-color: #e0f7fa;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  max-width: 800px; /* WelcomeViewと同じ最大幅に設定 */
+}
+
+.style-options {
+  max-width: 400px; /* WelcomeViewと同じテキスト部分の最大幅に設定 */
+  margin-right: 20px; /* 画像との間隔 */
+}
+
+h1 {
+  color: #1976d2; /* ヘッダーの色 */
+  margin-bottom: 20px; /* 下マージン */
+}
+
+p {
+  margin-bottom: 15px; /* 段落間の下マージン */
+  color: #333; /* テキストの色 */
+}
+
+.style-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2列のグリッド */
+  gap: 10px; /* ボタン間の隙間 */
+  margin-bottom: 20px; /* Nextボタンとの隙間 */
+}
+
+.style-button {
+  padding: 10px;
+  background-color: #64b5f6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.style-button:hover {
+  background-color: #2196f3;
+}
+
+/* WelcomeViewと同じボタンスタイリングを適用 */
+.next-button {
+  padding: 10px 20px;
+  background-color: #1976d2; /* ボタンの背景色 */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase; /* テキストを大文字に */
+  letter-spacing: 1px; /* 文字の間隔を設定 */
+  margin-top: 20px; /* ボタンの上マージン */
+}
+
+.style-image {
+  /* 画像が配置されるコンテナのスタイリング */
+}
+
+.style-image img {
+  width: 100%; /* 画像の幅をコンテナの幅に合わせます */
+  height: auto; /* 高さは自動的に調整されます */
+  max-width: 100%; /* 画像の最大幅 */
+  object-fit: cover; /* コンテナのサイズを超える部分は切り取られます */
+  border-radius: 10px; /* 画像の角を丸めます */
+}
