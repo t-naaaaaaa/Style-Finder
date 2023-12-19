@@ -1,12 +1,24 @@
+// App.js
 import React from "react";
-import WelcomeView from "./views/WelcomeView"; // 'views' フォルダからインポート
-import "./App.css"; // App.js用のCSSファイルをインポート
+import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
+import WelcomeView from "./views/WelcomeView";
+import StyleSelectionView from "./views/StyleSelectionView";
+import "./App.css";
 
 function App() {
+  let navigate = useNavigate();
+
+  const handleStartClick = () => {
+    navigate("/style-selection"); // '/style-selection'へ遷移
+  };
+
   return (
     <div className="App">
-      <WelcomeView />
-      {/* アプリの他の部分 */}
+      <Routes>
+        <Route path="/" element={<WelcomeView onStart={handleStartClick} />} />
+        <Route path="/style-selection" element={<StyleSelectionView />} />
+        {/* 他のルートも必要に応じて追加 */}
+      </Routes>
     </div>
   );
 }
